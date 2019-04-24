@@ -75,6 +75,7 @@ def setUp() {
 		, ('dateBD') : BDate]))
 	WS.verifyResponseStatusCode(AddSinglePerson, 200)
 	}
+	println("initialisation data terminée")
 	
 	// for each line // TODO find a way to use an object
 //	for (i in 1..rows_lign-1) {
@@ -106,6 +107,7 @@ def tearDown() {
 	def deleteListperson = WS.sendRequest(findTestObject('PersonsOR/DeleteOnePerson', [('OnePerson') : namePersonSup]))
 	WS.verifyResponseStatusCode(deleteListperson, 204)
 	}
+	println("données supprimées")
 	
 }
 
