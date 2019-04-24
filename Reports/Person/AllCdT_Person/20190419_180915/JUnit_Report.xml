@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="AllCdT_Person" time="2" tests="3" failures="0" errors="1">
+   <testsuite name="AllCdT_Person" tests="3" failures="0" errors="1" time="2" timestamp="2019-04-19 18:09:18" hostname="radjendirane - wpad" id="Test Suites/Person/AllCdT_Person">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/radjendirane/Katalon Studio/PersonsTestApi/Reports/Person/AllCdT_Person/20190419_180915"/>
+         <property name="logFiles" value="/Users/radjendirane/Katalon Studio/PersonsTestApi/Reports/Person/AllCdT_Person/20190419_180915/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="radjendirane - wpad"/>
+         <property name="hostAddress" value="195.154.179.210"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="6.1.1.1"/>
+      </properties>
+      <testcase name="Test Cases/cdT_Person/cdT_AddPerson" classname="Test Cases/cdT_Person/cdT_AddPerson" status="ERROR">
+         <error type="ERROR" message="Test Cases/cdT_Person/cdT_AddPerson FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: name for class: Script1555572930683
+	at cdT_AddPerson.run(cdT_AddPerson:51)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555690155931.run(TempTestSuite1555690155931.groovy:35)
+"/>
+         <system-out><![CDATA[2019-04-19 18:09:19 - [TEST_CASE][ERROR] - Test Cases/cdT_Person/cdT_AddPerson: Test Cases/cdT_Person/cdT_AddPerson FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: name for class: Script1555572930683
+	at cdT_AddPerson.run(cdT_AddPerson:51)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555690155931.run(TempTestSuite1555690155931.groovy:35)
+
+
+2019-04-19 18:09:19 - [TEST_STEP][PASSED] - gender = gender: null
+
+2019-04-19 18:09:19 - [TEST_STEP][PASSED] - namePerson = namePerson: null
+
+2019-04-19 18:09:19 - [TEST_STEP][PASSED] - birthDate = birthDate: null
+
+2019-04-19 18:09:19 - [TEST_STEP][PASSED] - jsonInputFile = JsonOutput.toJson(["gender":gender, "name":namePerson, "birthDate":birthDate]): null
+
+2019-04-19 18:09:19 - [TEST_STEP][PASSED] - println(jsonInputFile): null
+
+2019-04-19 18:09:19 - [TEST_STEP][PASSED] - request1 = findTestObject("PersonsOR/GetOnePerson"): null
+
+2019-04-19 18:09:19 - [TEST_STEP][PASSED] - url = restUrl + namePerson: null
+
+2019-04-19 18:09:19 - [TEST_STEP][PASSED] - checkPersonKo = sendRequest(findTestObject("PersonsOR/GetOnePerson")): Send request successfully
+
+2019-04-19 18:09:19 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-19 18:09:19 - [TEST_STEP][PASSED] - verifyResponseStatusCode(checkPersonKo, 404): Verify response status code successfully
+
+2019-04-19 18:09:19 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-04-19 18:09:19 - [TEST_STEP][ERROR] - request2 = findTestObject("PersonsOR/PostPerson", gender, name, birthDate): request2 = findTestObject("PersonsOR/PostPerson", gender, name, birthDate) FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: name for class: Script1555572930683
+	at cdT_AddPerson.run(cdT_AddPerson:51)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555690155931.run(TempTestSuite1555690155931.groovy:35)
+
+
+2019-04-19 18:09:19 - [MESSAGE][ERROR] - request2 = findTestObject("PersonsOR/PostPerson", gender, name, birthDate) FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: name for class: Script1555572930683
+	at cdT_AddPerson.run(cdT_AddPerson:51)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555690155931.run(TempTestSuite1555690155931.groovy:35)]]></system-out>
+         <system-err><![CDATA[2019-04-19 18:09:19 - [TEST_CASE][ERROR] - Test Cases/cdT_Person/cdT_AddPerson: Test Cases/cdT_Person/cdT_AddPerson FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: name for class: Script1555572930683
+	at cdT_AddPerson.run(cdT_AddPerson:51)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555690155931.run(TempTestSuite1555690155931.groovy:35)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/cdT_Person/cdT_DeletePerson" classname="Test Cases/cdT_Person/cdT_DeletePerson" status="PASSED">
+         <system-out><![CDATA[2019-04-19 18:09:19 - [TEST_CASE][PASSED] - Test Cases/cdT_Person/cdT_DeletePerson: Test Cases/cdT_Person/cdT_DeletePerson
+
+2019-04-19 18:09:19 - [TEST_STEP][PASSED] - gender = gender: null
+
+2019-04-19 18:09:19 - [TEST_STEP][PASSED] - namePerson = namePerson: null
+
+2019-04-19 18:09:19 - [TEST_STEP][PASSED] - birthDate = birthDate: null
+
+2019-04-19 18:09:19 - [TEST_STEP][PASSED] - jsonInputFile = JsonOutput.toJson(["gender":gender, "name":namePerson, "birthDate":birthDate]): null
+
+2019-04-19 18:09:19 - [TEST_STEP][PASSED] - println(jsonInputFile): null
+
+2019-04-19 18:09:19 - [TEST_STEP][PASSED] - request2 = findTestObject("PersonsOR/PostPerson"): null
+
+2019-04-19 18:09:19 - [TEST_STEP][PASSED] - request2.setBodyContent(new com.kms.katalon.core.testobject.impl.HttpTextBodyContent(jsonInputFile, UTF-8, application/json)): null
+
+2019-04-19 18:09:19 - [TEST_STEP][PASSED] - AddSinglePerson = sendRequest(request2): Send request successfully
+
+2019-04-19 18:09:19 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-19 18:09:19 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2019-04-19 18:09:19 - [TEST_STEP][PASSED] - result = slurper.parseText(AddSinglePerson.getResponseBodyContent()): null
+
+2019-04-19 18:09:19 - [TEST_STEP][PASSED] - assert name == namePerson: null
+
+2019-04-19 18:09:19 - [TEST_STEP][PASSED] - assert gender == gender: null
+
+2019-04-19 18:09:19 - [TEST_STEP][PASSED] - assert birthDate == birthDate: null
+
+2019-04-19 18:09:19 - [TEST_STEP][PASSED] - verifyResponseStatusCode(AddSinglePerson, 200): Verify response status code successfully
+
+2019-04-19 18:09:19 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-04-19 18:09:19 - [TEST_STEP][PASSED] - checkIfPersonWellAdded = sendRequest(findTestObject("PersonsOR/GetOnePerson")): Send request successfully
+
+2019-04-19 18:09:19 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-19 18:09:19 - [TEST_STEP][PASSED] - slurper1 = new groovy.json.JsonSlurper(): null
+
+2019-04-19 18:09:19 - [TEST_STEP][PASSED] - result1 = slurper1.parseText(checkIfPersonWellAdded.getResponseBodyContent()): null
+
+2019-04-19 18:09:19 - [TEST_STEP][PASSED] - assert name == namePerson: null
+
+2019-04-19 18:09:19 - [TEST_STEP][PASSED] - assert gender == gender: null
+
+2019-04-19 18:09:19 - [TEST_STEP][PASSED] - assert birthDate == birthDate: null
+
+2019-04-19 18:09:19 - [TEST_STEP][PASSED] - verifyResponseStatusCode(checkIfPersonWellAdded, 200, CONTINUE_ON_FAILURE): Verify response status code successfully
+
+2019-04-19 18:09:19 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-04-19 18:09:19 - [TEST_STEP][PASSED] - DeletePersonAddedLastely = sendRequest(findTestObject("PersonsOR/DeleteOnePerson")): Send request successfully
+
+2019-04-19 18:09:20 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - verifyResponseStatusCode(DeletePersonAddedLastely, 204): Verify response status code successfully
+
+2019-04-19 18:09:20 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - DeletePersonAgain = sendRequest(findTestObject("PersonsOR/DeleteOnePerson")): Send request successfully
+
+2019-04-19 18:09:20 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - verifyResponseStatusCode(DeletePersonAgain, 404): Verify response status code successfully
+
+2019-04-19 18:09:20 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/cdT_Person/cdT_retrieveSinglePerson" classname="Test Cases/cdT_Person/cdT_retrieveSinglePerson" status="PASSED">
+         <system-out><![CDATA[2019-04-19 18:09:20 - [TEST_CASE][PASSED] - Test Cases/cdT_Person/cdT_retrieveSinglePerson: Test Cases/cdT_Person/cdT_retrieveSinglePerson
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - gender = gender: null
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - namePerson = namePerson: null
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - birthDate = birthDate: null
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - jsonInputFile = JsonOutput.toJson(["gender":gender, "name":namePerson, "birthDate":birthDate]): null
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - println(jsonInputFile): null
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - request2 = findTestObject("PersonsOR/PostPerson"): null
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - request2.setBodyContent(new com.kms.katalon.core.testobject.impl.HttpTextBodyContent(jsonInputFile, UTF-8, application/json)): null
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - AddSinglePerson = sendRequest(request2): Send request successfully
+
+2019-04-19 18:09:20 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - result = slurper.parseText(AddSinglePerson.getResponseBodyContent()): null
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - assert name == namePerson: null
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - assert gender == gender: null
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - assert birthDate == birthDate: null
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - verifyResponseStatusCode(AddSinglePerson, 200): Verify response status code successfully
+
+2019-04-19 18:09:20 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - checkIfPersonExist = sendRequest(findTestObject("PersonsOR/GetOnePerson")): Send request successfully
+
+2019-04-19 18:09:20 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - slurper1 = new groovy.json.JsonSlurper(): null
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - result1 = slurper1.parseText(checkIfPersonExist.getResponseBodyContent()): null
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - assert name == namePerson: null
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - assert gender == gender: null
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - assert birthDate == birthDate: null
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - verifyResponseStatusCode(checkIfPersonExist, 200): Verify response status code successfully
+
+2019-04-19 18:09:20 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - DeletePersonAddedLastely = sendRequest(findTestObject("PersonsOR/DeleteOnePerson")): Send request successfully
+
+2019-04-19 18:09:20 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - verifyResponseStatusCode(DeletePersonAddedLastely, 204): Verify response status code successfully
+
+2019-04-19 18:09:20 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - checkIfPersonExistKo = sendRequest(findTestObject("PersonsOR/GetOnePerson")): Send request successfully
+
+2019-04-19 18:09:20 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - verifyResponseStatusCode(checkIfPersonExistKo, 404): Verify response status code successfully
+
+2019-04-19 18:09:20 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/cdT_Person/cdT_retriveListPerson" classname="Test Cases/cdT_Person/cdT_retriveListPerson" status="PASSED">
+         <system-out><![CDATA[2019-04-19 18:09:20 - [TEST_CASE][PASSED] - Test Cases/cdT_Person/cdT_retriveListPerson: Test Cases/cdT_Person/cdT_retriveListPerson
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - gender = gender: null
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - namePerson = namePerson: null
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - birthDate = birthDate: null
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - jsonInputFile = JsonOutput.toJson(["gender":gender, "name":namePerson, "birthDate":birthDate]): null
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - println(jsonInputFile): null
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - request2 = findTestObject("PersonsOR/PostPerson"): null
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - request2.setBodyContent(new com.kms.katalon.core.testobject.impl.HttpTextBodyContent(jsonInputFile, UTF-8, application/json)): null
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - AddSinglePerson = sendRequest(request2): Send request successfully
+
+2019-04-19 18:09:20 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - result = slurper.parseText(AddSinglePerson.getResponseBodyContent()): null
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - assert name == namePerson: null
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - assert gender == gender: null
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - assert birthDate == birthDate: null
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - verifyResponseStatusCode(AddSinglePerson, 200): Verify response status code successfully
+
+2019-04-19 18:09:20 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - checkListPerson = sendRequest(findTestObject("PersonsOR/GetAll")): Send request successfully
+
+2019-04-19 18:09:20 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - verifyResponseStatusCode(checkListPerson, 200, STOP_ON_FAILURE): Verify response status code successfully
+
+2019-04-19 18:09:20 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - DeletePersonAddedLastely = sendRequest(findTestObject("PersonsOR/DeleteOnePerson")): Send request successfully
+
+2019-04-19 18:09:20 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - verifyResponseStatusCode(DeletePersonAddedLastely, 204): Verify response status code successfully
+
+2019-04-19 18:09:20 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - checkIfPersonExistKo = sendRequest(findTestObject("PersonsOR/GetOnePerson")): Send request successfully
+
+2019-04-19 18:09:20 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-19 18:09:20 - [TEST_STEP][PASSED] - verifyResponseStatusCode(checkIfPersonExistKo, 404): Verify response status code successfully
+
+2019-04-19 18:09:20 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-04-19 18:09:18 - [TEST_SUITE][ERROR] - AllCdT_Person: Test Cases/cdT_Person/cdT_AddPerson FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: name for class: Script1555572930683
+	at cdT_AddPerson.run(cdT_AddPerson:51)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555690155931.run(TempTestSuite1555690155931.groovy:35)]]></system-out>
+      <system-err><![CDATA[2019-04-19 18:09:18 - [TEST_SUITE][ERROR] - AllCdT_Person: Test Cases/cdT_Person/cdT_AddPerson FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: name for class: Script1555572930683
+	at cdT_AddPerson.run(cdT_AddPerson:51)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1555690155931.run(TempTestSuite1555690155931.groovy:35)]]></system-err>
+   </testsuite>
+</testsuites>

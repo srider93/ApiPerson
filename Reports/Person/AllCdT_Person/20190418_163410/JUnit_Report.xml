@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="AllCdT_Person" time="2" tests="4" failures="0" errors="0">
+   <testsuite name="AllCdT_Person" tests="4" failures="0" errors="0" time="2" timestamp="2019-04-18 16:34:12" hostname="radjendirane - 172.16.200.224" id="Test Suites/Person/AllCdT_Person">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/radjendirane/Katalon Studio/PersonsTestApi/Reports/Person/AllCdT_Person/20190418_163410"/>
+         <property name="logFiles" value="/Users/radjendirane/Katalon Studio/PersonsTestApi/Reports/Person/AllCdT_Person/20190418_163410/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="radjendirane - 172.16.200.224"/>
+         <property name="hostAddress" value="172.16.200.224"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="6.1.1.1"/>
+      </properties>
+      <testcase name="Test Cases/cdT_Person/cdT_AddPerson" classname="Test Cases/cdT_Person/cdT_AddPerson" status="PASSED">
+         <system-out><![CDATA[2019-04-18 16:34:13 - [TEST_CASE][PASSED] - Test Cases/cdT_Person/cdT_AddPerson: Test Cases/cdT_Person/cdT_AddPerson
+
+2019-04-18 16:34:13 - [TEST_STEP][PASSED] - gender = gender: null
+
+2019-04-18 16:34:13 - [TEST_STEP][PASSED] - namePerson = namePerson: null
+
+2019-04-18 16:34:13 - [TEST_STEP][PASSED] - birthDate = birthDate: null
+
+2019-04-18 16:34:13 - [TEST_STEP][PASSED] - jsonInputFile = JsonOutput.toJson(["gender":gender, "name":namePerson, "birthDate":birthDate]): null
+
+2019-04-18 16:34:13 - [TEST_STEP][PASSED] - println(jsonInputFile): null
+
+2019-04-18 16:34:13 - [TEST_STEP][PASSED] - request1 = findTestObject("PersonsOR/GetOnePerson"): null
+
+2019-04-18 16:34:13 - [TEST_STEP][PASSED] - url = restUrl + namePerson: null
+
+2019-04-18 16:34:13 - [TEST_STEP][PASSED] - checkPersonKo = sendRequest(findTestObject("PersonsOR/GetOnePerson")): Send request successfully
+
+2019-04-18 16:34:14 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - verifyResponseStatusCode(checkPersonKo, 404): Verify response status code successfully
+
+2019-04-18 16:34:14 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - request2 = findTestObject("PersonsOR/PostPerson"): null
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - request2.setBodyContent(new com.kms.katalon.core.testobject.impl.HttpTextBodyContent(jsonInputFile, UTF-8, application/json)): null
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - AddSinglePerson = sendRequest(request2): Send request successfully
+
+2019-04-18 16:34:14 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - result = slurper.parseText(AddSinglePerson.getResponseBodyContent()): null
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - assert name == namePerson: null
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - assert gender == gender: null
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - assert birthDate == birthDate: null
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - verifyResponseStatusCode(AddSinglePerson, 200): Verify response status code successfully
+
+2019-04-18 16:34:14 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - checkIfPersonWellAdded = sendRequest(findTestObject("PersonsOR/GetOnePerson")): Send request successfully
+
+2019-04-18 16:34:14 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - slurper1 = new groovy.json.JsonSlurper(): null
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - result1 = slurper1.parseText(checkIfPersonWellAdded.getResponseBodyContent()): null
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - assert name == namePerson: null
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - assert gender == gender: null
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - assert birthDate == birthDate: null
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - verifyResponseStatusCode(AddSinglePerson, 200): Verify response status code successfully
+
+2019-04-18 16:34:14 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - DeletePersonAddedLastely = sendRequest(findTestObject("PersonsOR/DeleteOnePerson")): Send request successfully
+
+2019-04-18 16:34:14 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - verifyResponseStatusCode(DeletePersonAddedLastely, 204): Verify response status code successfully
+
+2019-04-18 16:34:14 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - checkPersonKoAgain = sendRequest(findTestObject("PersonsOR/GetOnePerson")): Send request successfully
+
+2019-04-18 16:34:14 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - verifyResponseStatusCode(checkPersonKoAgain, 404): Verify response status code successfully
+
+2019-04-18 16:34:14 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/cdT_Person/cdT_DeletePerson" classname="Test Cases/cdT_Person/cdT_DeletePerson" status="PASSED">
+         <system-out><![CDATA[2019-04-18 16:34:14 - [TEST_CASE][PASSED] - Test Cases/cdT_Person/cdT_DeletePerson: Test Cases/cdT_Person/cdT_DeletePerson
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - gender = gender: null
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - namePerson = namePerson: null
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - birthDate = birthDate: null
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - jsonInputFile = JsonOutput.toJson(["gender":gender, "name":namePerson, "birthDate":birthDate]): null
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - println(jsonInputFile): null
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - request2 = findTestObject("PersonsOR/PostPerson"): null
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - request2.setBodyContent(new com.kms.katalon.core.testobject.impl.HttpTextBodyContent(jsonInputFile, UTF-8, application/json)): null
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - AddSinglePerson = sendRequest(request2): Send request successfully
+
+2019-04-18 16:34:14 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - result = slurper.parseText(AddSinglePerson.getResponseBodyContent()): null
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - assert name == namePerson: null
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - assert gender == gender: null
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - assert birthDate == birthDate: null
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - verifyResponseStatusCode(AddSinglePerson, 200): Verify response status code successfully
+
+2019-04-18 16:34:14 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - checkIfPersonWellAdded = sendRequest(findTestObject("PersonsOR/GetOnePerson")): Send request successfully
+
+2019-04-18 16:34:14 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - slurper1 = new groovy.json.JsonSlurper(): null
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - result1 = slurper1.parseText(checkIfPersonWellAdded.getResponseBodyContent()): null
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - assert name == namePerson: null
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - assert gender == gender: null
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - assert birthDate == birthDate: null
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - verifyResponseStatusCode(checkIfPersonWellAdded, 200, CONTINUE_ON_FAILURE): Verify response status code successfully
+
+2019-04-18 16:34:14 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - DeletePersonAddedLastely = sendRequest(findTestObject("PersonsOR/DeleteOnePerson")): Send request successfully
+
+2019-04-18 16:34:14 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - verifyResponseStatusCode(DeletePersonAddedLastely, 204): Verify response status code successfully
+
+2019-04-18 16:34:14 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - DeletePersonAgain = sendRequest(findTestObject("PersonsOR/DeleteOnePerson")): Send request successfully
+
+2019-04-18 16:34:14 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - verifyResponseStatusCode(DeletePersonAgain, 404): Verify response status code successfully
+
+2019-04-18 16:34:14 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/cdT_Person/cdT_retrieveSinglePerson" classname="Test Cases/cdT_Person/cdT_retrieveSinglePerson" status="PASSED">
+         <system-out><![CDATA[2019-04-18 16:34:14 - [TEST_CASE][PASSED] - Test Cases/cdT_Person/cdT_retrieveSinglePerson: Test Cases/cdT_Person/cdT_retrieveSinglePerson
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - gender = gender: null
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - namePerson = namePerson: null
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - birthDate = birthDate: null
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - jsonInputFile = JsonOutput.toJson(["gender":gender, "name":namePerson, "birthDate":birthDate]): null
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - println(jsonInputFile): null
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - request2 = findTestObject("PersonsOR/PostPerson"): null
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - request2.setBodyContent(new com.kms.katalon.core.testobject.impl.HttpTextBodyContent(jsonInputFile, UTF-8, application/json)): null
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - AddSinglePerson = sendRequest(request2): Send request successfully
+
+2019-04-18 16:34:14 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - result = slurper.parseText(AddSinglePerson.getResponseBodyContent()): null
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - assert name == namePerson: null
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - assert gender == gender: null
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - assert birthDate == birthDate: null
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - verifyResponseStatusCode(AddSinglePerson, 200): Verify response status code successfully
+
+2019-04-18 16:34:14 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-04-18 16:34:14 - [TEST_STEP][PASSED] - checkIfPersonExist = sendRequest(findTestObject("PersonsOR/GetOnePerson")): Send request successfully
+
+2019-04-18 16:34:15 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-18 16:34:15 - [TEST_STEP][PASSED] - slurper1 = new groovy.json.JsonSlurper(): null
+
+2019-04-18 16:34:15 - [TEST_STEP][PASSED] - result1 = slurper1.parseText(checkIfPersonExist.getResponseBodyContent()): null
+
+2019-04-18 16:34:15 - [TEST_STEP][PASSED] - assert name == namePerson: null
+
+2019-04-18 16:34:15 - [TEST_STEP][PASSED] - assert gender == gender: null
+
+2019-04-18 16:34:15 - [TEST_STEP][PASSED] - assert birthDate == birthDate: null
+
+2019-04-18 16:34:15 - [TEST_STEP][PASSED] - verifyResponseStatusCode(checkIfPersonExist, 200): Verify response status code successfully
+
+2019-04-18 16:34:15 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-04-18 16:34:15 - [TEST_STEP][PASSED] - DeletePersonAddedLastely = sendRequest(findTestObject("PersonsOR/DeleteOnePerson")): Send request successfully
+
+2019-04-18 16:34:15 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-18 16:34:15 - [TEST_STEP][PASSED] - verifyResponseStatusCode(DeletePersonAddedLastely, 204): Verify response status code successfully
+
+2019-04-18 16:34:15 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-04-18 16:34:15 - [TEST_STEP][PASSED] - checkIfPersonExistKo = sendRequest(findTestObject("PersonsOR/GetOnePerson")): Send request successfully
+
+2019-04-18 16:34:15 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-18 16:34:15 - [TEST_STEP][PASSED] - verifyResponseStatusCode(checkIfPersonExistKo, 404): Verify response status code successfully
+
+2019-04-18 16:34:15 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/cdT_Person/cdT_retriveListPerson" classname="Test Cases/cdT_Person/cdT_retriveListPerson" status="PASSED">
+         <system-out><![CDATA[2019-04-18 16:34:15 - [TEST_CASE][PASSED] - Test Cases/cdT_Person/cdT_retriveListPerson: Test Cases/cdT_Person/cdT_retriveListPerson
+
+2019-04-18 16:34:15 - [TEST_STEP][PASSED] - data_init = findTestData("Data Files/DDT_Person"): null
+
+2019-04-18 16:34:15 - [TEST_STEP][PASSED] - rows_lign = data_init.getRowNumbers(): null
+
+2019-04-18 16:34:15 - [TEST_STEP][PASSED] - rows_column = data_init.getColumnNumbers(): null
+
+2019-04-18 16:34:15 - [TEST_STEP][PASSED] - checkListPerson = sendRequest(findTestObject("PersonsOR/GetAll")): Send request successfully
+
+2019-04-18 16:34:15 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-18 16:34:15 - [TEST_STEP][PASSED] - verifyElementsCount(checkListPerson, "name", rows_lign): Verify element count successfully
+
+2019-04-18 16:34:15 - [MESSAGE][PASSED] - Verify element count successfully
+
+2019-04-18 16:34:15 - [TEST_STEP][PASSED] - verifyResponseStatusCode(checkListPerson, 200, CONTINUE_ON_FAILURE): Verify response status code successfully
+
+2019-04-18 16:34:15 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-04-18 16:34:12 - [TEST_SUITE][PASSED] - AllCdT_Person: Test Cases/cdT_Person/cdT_retriveListPerson]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

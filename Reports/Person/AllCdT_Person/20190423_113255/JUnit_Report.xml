@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="AllCdT_Person" time="1" tests="0" failures="0" errors="0">
+   <testsuite name="AllCdT_Person" tests="0" failures="0" errors="0" time="1" timestamp="2019-04-23 11:32:57" hostname="radjendirane - 172.16.200.200" id="Test Suites/Person/AllCdT_Person">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/radjendirane/Katalon Studio/PersonsTestApi/Reports/Person/AllCdT_Person/20190423_113255"/>
+         <property name="logFiles" value="/Users/radjendirane/Katalon Studio/PersonsTestApi/Reports/Person/AllCdT_Person/20190423_113255/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="radjendirane - 172.16.200.200"/>
+         <property name="hostAddress" value="172.16.200.200"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="6.1.1.1"/>
+      </properties>
+      <system-out><![CDATA[2019-04-23 11:32:57 - [TEST_SUITE][PASSED] - AllCdT_Person: null]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

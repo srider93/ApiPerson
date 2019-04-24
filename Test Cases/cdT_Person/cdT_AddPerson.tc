@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>essai</description>
+   <name>cdT_AddPerson</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0f205e3f-dde6-40f4-8a86-7626caea71c6</testCaseGuid>
+</TestCaseEntity>
