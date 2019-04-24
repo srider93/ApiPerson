@@ -67,7 +67,7 @@ def setUp() {
 	TestData data_init = findTestData('Data Files/DDT_Person')
 	def rows_lign = data_init.getRowNumbers()
 // for each line // TODO find a way to make it work (properly)
-	for (i in 1..rows_lign) {
+	for (i in O..rows_lign) {
 	def name = data_init.getValue('name', i)
 	def gender = data_init.getValue('gender', i)
 	def BDate = data_init.getValue('BirthDate', i)
