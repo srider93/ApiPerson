@@ -49,7 +49,7 @@ WS.verifyResponseStatusCode(checkListPerson, 200, FailureHandling.STOP_ON_FAILUR
 
 if (GlobalVariable.valueExecSuiteTest == 1) {
     println(rows_lign.toString())
-	WS.verifyElementsCount(checkListPerson, 'name', rows_lign + 1)
+	WS.verifyElementsCount(checkListPerson, 'name', rows_lign+1)
 }
 
 //Supprime la donnée rentrée précédemment et verifie qu'il retourne bien le code 204

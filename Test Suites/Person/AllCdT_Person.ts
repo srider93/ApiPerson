@@ -11,25 +11,31 @@
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <testSuiteGuid>c9a7c865-6a94-42d6-be5c-e8d1b94f948a</testSuiteGuid>
    <testCaseLink>
-      <guid>4938e06a-43d1-4912-a12f-af40b6f8b036</guid>
+      <guid>bac246c4-8cb0-40b7-8457-d6b6f49e849b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/cdT_Person/cdT_InitiData</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>1100ef5a-20d3-4b77-8877-ffa5fe035f1c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/cdT_Person/cdT_retrieveSinglePerson</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>1ccd2b66-2d43-42d7-8f39-4555e24ddc4f</guid>
+      <guid>b0315713-eed0-4957-8c27-bd7b28accbdd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/cdT_Person/cdT_AddPerson</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>8e5692d9-8f13-4581-80cc-3b9dc3b44556</guid>
+      <guid>213f4cea-496c-4838-bf76-4d468e595b37</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/cdT_Person/cdT_retriveListPerson</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>d8bbc7a5-de7c-4c24-8828-6aab488d8d4b</guid>
+      <guid>7a162e45-98b8-4371-b338-1470d1d815a1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/cdT_Person/cdT_DeletePerson</testCaseId>

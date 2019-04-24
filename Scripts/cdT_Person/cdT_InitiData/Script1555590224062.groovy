@@ -30,41 +30,42 @@ import java.util.ArrayList
 import groovy.json.JsonOutput
 
 
+//
+//TestData data_init = findTestData('Data Files/DDT_Person')
+//def rows_lign = data_init.getRowNumbers()
+//def rows_column = data_init.getColumnNumbers()
+//
+//def list_name = new ArrayList()
+//for (i in 1..rows_lign) {
+//	list_name.add(data_init.getValue('name', i))
+//}
+//println(list_name.size)
+//
+//
+//def list_gender = new ArrayList();
+//for (i in 1..rows_lign) {
+//	list_gender.add(data_init.getValue('gender', i))
+//}
+//println(list_gender.size)
+//
+//
+//def list_BDate = new ArrayList();
+//for (i in 1..rows_lign) {
+//	list_BDate.add(data_init.getValue('BirthDate', i))
+//}
+//println(list_BDate.size)
+//
+//for (i in 0..rows_lign-1) {
+//def gender = list_gender.get(i)
+//def namePerson = list_name.get(i)
+//def birthDate = list_BDate.get(i)
+//def jsonInputFile = JsonOutput.toJson([gender: gender, name: namePerson, birthDate: birthDate])
+//println(jsonInputFile)
+//def request2 = (RequestObject)findTestObject('PersonsOR/PostPerson')
+//request2.setBodyContent(new HttpTextBodyContent(jsonInputFile,"UTF-8", "application/json"))
+//def AddSinglePerson = WS.sendRequest(request2)
+//WS.verifyResponseStatusCode(AddSinglePerson, 200)
+println("test")
 
-TestData data_init = findTestData('Data Files/DDT_Person')
-def rows_lign = data_init.getRowNumbers()
-def rows_column = data_init.getColumnNumbers()
-
-def list_name = new ArrayList()
-for (i in 1..rows_lign) {
-	list_name.add(data_init.getValue('name', i))
-}
-println(list_name.size)
-
-
-def list_gender = new ArrayList();
-for (i in 1..rows_lign) {
-	list_gender.add(data_init.getValue('gender', i))
-}
-println(list_gender.size)
-
-
-def list_BDate = new ArrayList();
-for (i in 1..rows_lign) {
-	list_BDate.add(data_init.getValue('BirthDate', i))
-}
-println(list_BDate.size)
-
-for (i in 0..rows_lign-1) {
-def gender = list_gender.get(i)
-def namePerson = list_name.get(i)
-def birthDate = list_BDate.get(i)
-def jsonInputFile = JsonOutput.toJson([gender: gender, name: namePerson, birthDate: birthDate])
-println(jsonInputFile)
-def request2 = (RequestObject)findTestObject('PersonsOR/PostPerson')
-request2.setBodyContent(new HttpTextBodyContent(jsonInputFile,"UTF-8", "application/json"))
-def AddSinglePerson = WS.sendRequest(request2)
-WS.verifyResponseStatusCode(AddSinglePerson, 200)
-}
 
 

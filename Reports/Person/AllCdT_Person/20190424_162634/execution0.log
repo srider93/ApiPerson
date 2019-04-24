@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-04-24T16:26:36</date>
+  <millis>1556115996895</millis>
+  <sequence>0</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startSuite</method>
+  <thread>1</thread>
+  <message>Start Test Suite : Test Suites/Person/AllCdT_Person</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="name">AllCdT_Person</property>
+  <property name="description"></property>
+  <property name="id">Test Suites/Person/AllCdT_Person</property>
+</record>
+<record>
+  <date>2019-04-24T16:26:36</date>
+  <millis>1556115996922</millis>
+  <sequence>1</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>hostName = radjendirane - 172.16.200.200</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="hostName">radjendirane - 172.16.200.200</property>
+</record>
+<record>
+  <date>2019-04-24T16:26:36</date>
+  <millis>1556115996924</millis>
+  <sequence>2</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>os = Mac OS X 64bit</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="os">Mac OS X 64bit</property>
+</record>
+<record>
+  <date>2019-04-24T16:26:36</date>
+  <millis>1556115996925</millis>
+  <sequence>3</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>hostAddress = 172.16.200.200</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="hostAddress">172.16.200.200</property>
+</record>
+<record>
+  <date>2019-04-24T16:26:36</date>
+  <millis>1556115996932</millis>
+  <sequence>4</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>katalonVersion = 6.1.1.1</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="katalonVersion">6.1.1.1</property>
+</record>
+</log>

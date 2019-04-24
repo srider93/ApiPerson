@@ -1,0 +1,82 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+AllCdT_Person,,,2019-04-24 16:21:17,2019-04-24 16:21:20,"3,178s",FAILED
+,,,,,,
+Test Cases/cdT_Person/cdT_retrieveSinglePerson,,,2019-04-24 16:21:18,2019-04-24 16:21:19,"0,626s",PASSED
+Start setup action : setupTestCase,,,2019-04-24 16:21:18,2019-04-24 16:21:19,"0,140s",PASSED
+"AddSinglePerson = sendRequest(findTestObject(""PersonsOR/PostPerson"", [""gender"":gender, ""name"":namePerson, ""dateBD"":birthDate]))",,,2019-04-24 16:21:19,2019-04-24 16:21:19,"0,023s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,2019-04-24 16:21:19,2019-04-24 16:21:19,"0,008s",PASSED
+result = slurper.parseText(AddSinglePerson.getResponseBodyContent()),,,2019-04-24 16:21:19,2019-04-24 16:21:19,"0,013s",PASSED
+assert name == namePerson,,,2019-04-24 16:21:19,2019-04-24 16:21:19,"0,008s",PASSED
+assert gender == gender,,,2019-04-24 16:21:19,2019-04-24 16:21:19,"0,004s",PASSED
+assert birthDate == birthDate,,,2019-04-24 16:21:19,2019-04-24 16:21:19,"0,007s",PASSED
+"verifyResponseStatusCode(AddSinglePerson, 200)",,,2019-04-24 16:21:19,2019-04-24 16:21:19,"0,004s",PASSED
+"checkIfPersonExist = sendRequest(findTestObject(""PersonsOR/GetOnePerson""))",,,2019-04-24 16:21:19,2019-04-24 16:21:19,"0,065s",PASSED
+slurper1 = new groovy.json.JsonSlurper(),,,2019-04-24 16:21:19,2019-04-24 16:21:19,"0,001s",PASSED
+result1 = slurper1.parseText(checkIfPersonExist.getResponseBodyContent()),,,2019-04-24 16:21:19,2019-04-24 16:21:19,"0,001s",PASSED
+assert name == namePerson,,,2019-04-24 16:21:19,2019-04-24 16:21:19,"0,001s",PASSED
+assert gender == gender,,,2019-04-24 16:21:19,2019-04-24 16:21:19,"0,001s",PASSED
+assert birthDate == birthDate,,,2019-04-24 16:21:19,2019-04-24 16:21:19,"0,001s",PASSED
+"verifyResponseStatusCode(checkIfPersonExist, 200)",,,2019-04-24 16:21:19,2019-04-24 16:21:19,"0,003s",PASSED
+"DeletePersonAddedLastely = sendRequest(findTestObject(""PersonsOR/DeleteOnePerson""))",,,2019-04-24 16:21:19,2019-04-24 16:21:19,"0,046s",PASSED
+"verifyResponseStatusCode(DeletePersonAddedLastely, 204)",,,2019-04-24 16:21:19,2019-04-24 16:21:19,"0,003s",PASSED
+"checkIfPersonExistKo = sendRequest(findTestObject(""PersonsOR/GetOnePerson""))",,,2019-04-24 16:21:19,2019-04-24 16:21:19,"0,053s",PASSED
+"verifyResponseStatusCode(checkIfPersonExistKo, 404)",,,2019-04-24 16:21:19,2019-04-24 16:21:19,"0,002s",PASSED
+,,,,,,
+Test Cases/cdT_Person/cdT_AddPerson,,essai,2019-04-24 16:21:19,2019-04-24 16:21:19,"0,390s",PASSED
+Start setup action : setupTestCase,,,2019-04-24 16:21:19,2019-04-24 16:21:19,"0,001s",PASSED
+"checkPersonKo = sendRequest(findTestObject(""PersonsOR/GetOnePerson""))",,,2019-04-24 16:21:19,2019-04-24 16:21:19,"0,035s",PASSED
+"verifyResponseStatusCode(checkPersonKo, 404)",,,2019-04-24 16:21:19,2019-04-24 16:21:19,"0,002s",PASSED
+"AddSinglePerson = sendRequest(findTestObject(""PersonsOR/PostPerson"", [""gender"":gender, ""name"":namePerson, ""dateBD"":birthDate]))",,,2019-04-24 16:21:19,2019-04-24 16:21:19,"0,008s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,2019-04-24 16:21:19,2019-04-24 16:21:19,"0,001s",PASSED
+result = slurper.parseText(AddSinglePerson.getResponseBodyContent()),,,2019-04-24 16:21:19,2019-04-24 16:21:19,"0,001s",PASSED
+assert name == namePerson,,,2019-04-24 16:21:19,2019-04-24 16:21:19,"0,001s",PASSED
+assert gender == gender,,,2019-04-24 16:21:19,2019-04-24 16:21:19,"0,000s",PASSED
+assert birthDate == birthDate,,,2019-04-24 16:21:19,2019-04-24 16:21:19,"0,000s",PASSED
+"verifyResponseStatusCode(AddSinglePerson, 200)",,,2019-04-24 16:21:19,2019-04-24 16:21:19,"0,002s",PASSED
+"checkIfPersonWellAdded = sendRequest(findTestObject(""PersonsOR/GetOnePerson""))",,,2019-04-24 16:21:19,2019-04-24 16:21:19,"0,035s",PASSED
+slurper1 = new groovy.json.JsonSlurper(),,,2019-04-24 16:21:19,2019-04-24 16:21:19,"0,000s",PASSED
+result1 = slurper1.parseText(checkIfPersonWellAdded.getResponseBodyContent()),,,2019-04-24 16:21:19,2019-04-24 16:21:19,"0,001s",PASSED
+assert name == namePerson,,,2019-04-24 16:21:19,2019-04-24 16:21:19,"0,001s",PASSED
+assert gender == gender,,,2019-04-24 16:21:19,2019-04-24 16:21:19,"0,001s",PASSED
+assert birthDate == birthDate,,,2019-04-24 16:21:19,2019-04-24 16:21:19,"0,007s",PASSED
+"verifyResponseStatusCode(AddSinglePerson, 200)",,,2019-04-24 16:21:19,2019-04-24 16:21:19,"0,004s",PASSED
+"DeletePersonAddedLastely = sendRequest(findTestObject(""PersonsOR/DeleteOnePerson""))",,,2019-04-24 16:21:19,2019-04-24 16:21:19,"0,033s",PASSED
+"verifyResponseStatusCode(DeletePersonAddedLastely, 204)",,,2019-04-24 16:21:19,2019-04-24 16:21:19,"0,001s",PASSED
+"checkPersonKoAgain = sendRequest(findTestObject(""PersonsOR/GetOnePerson""))",,,2019-04-24 16:21:19,2019-04-24 16:21:19,"0,042s",PASSED
+"verifyResponseStatusCode(checkPersonKoAgain, 404)",,,2019-04-24 16:21:19,2019-04-24 16:21:19,"0,002s",PASSED
+,,,,,,
+Test Cases/cdT_Person/cdT_retriveListPerson,,,2019-04-24 16:21:19,2019-04-24 16:21:20,"0,305s",FAILED
+Start setup action : setupTestCase,,,2019-04-24 16:21:19,2019-04-24 16:21:19,"0,001s",PASSED
+"data_init = findTestData(""Data Files/DDT_Person"")",,,2019-04-24 16:21:20,2019-04-24 16:21:20,"0,004s",PASSED
+rows_lign = data_init.getRowNumbers(),,,2019-04-24 16:21:20,2019-04-24 16:21:20,"0,001s",PASSED
+"AddSinglePerson = sendRequest(findTestObject(""PersonsOR/PostPerson"", [""gender"":gender, ""name"":namePerson, ""dateBD"":birthDate]))",,,2019-04-24 16:21:20,2019-04-24 16:21:20,"0,030s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,2019-04-24 16:21:20,2019-04-24 16:21:20,"0,001s",PASSED
+result = slurper.parseText(AddSinglePerson.getResponseBodyContent()),,,2019-04-24 16:21:20,2019-04-24 16:21:20,"0,001s",PASSED
+assert name == namePerson,,,2019-04-24 16:21:20,2019-04-24 16:21:20,"0,001s",PASSED
+assert gender == gender,,,2019-04-24 16:21:20,2019-04-24 16:21:20,"0,000s",PASSED
+assert birthDate == birthDate,,,2019-04-24 16:21:20,2019-04-24 16:21:20,"0,001s",PASSED
+"verifyResponseStatusCode(AddSinglePerson, 200)",,,2019-04-24 16:21:20,2019-04-24 16:21:20,"0,002s",PASSED
+"checkListPerson = sendRequest(findTestObject(""PersonsOR/GetAll""))",,,2019-04-24 16:21:20,2019-04-24 16:21:20,"0,017s",PASSED
+"verifyResponseStatusCode(checkListPerson, 200, STOP_ON_FAILURE)",,,2019-04-24 16:21:20,2019-04-24 16:21:20,"0,008s",PASSED
+if (valueExecSuiteTest == 1),,,2019-04-24 16:21:20,2019-04-24 16:21:20,"0,030s",FAILED
+,,,,,,
+Test Cases/cdT_Person/cdT_DeletePerson,,,2019-04-24 16:21:20,2019-04-24 16:21:20,"0,403s",PASSED
+Start setup action : setupTestCase,,,2019-04-24 16:21:20,2019-04-24 16:21:20,"0,001s",PASSED
+"AddSinglePerson = sendRequest(findTestObject(""PersonsOR/PostPerson"", [""gender"":gender, ""name"":namePerson, ""dateBD"":birthDate]))",,,2019-04-24 16:21:20,2019-04-24 16:21:20,"0,012s",PASSED
+slurper = new groovy.json.JsonSlurper(),,,2019-04-24 16:21:20,2019-04-24 16:21:20,"0,002s",PASSED
+result = slurper.parseText(AddSinglePerson.getResponseBodyContent()),,,2019-04-24 16:21:20,2019-04-24 16:21:20,"0,001s",PASSED
+assert name == namePerson,,,2019-04-24 16:21:20,2019-04-24 16:21:20,"0,001s",PASSED
+assert gender == gender,,,2019-04-24 16:21:20,2019-04-24 16:21:20,"0,000s",PASSED
+assert birthDate == birthDate,,,2019-04-24 16:21:20,2019-04-24 16:21:20,"0,000s",PASSED
+"verifyResponseStatusCode(AddSinglePerson, 200)",,,2019-04-24 16:21:20,2019-04-24 16:21:20,"0,001s",PASSED
+"checkIfPersonWellAdded = sendRequest(findTestObject(""PersonsOR/GetOnePerson""))",,,2019-04-24 16:21:20,2019-04-24 16:21:20,"0,036s",PASSED
+slurper1 = new groovy.json.JsonSlurper(),,,2019-04-24 16:21:20,2019-04-24 16:21:20,"0,001s",PASSED
+result1 = slurper1.parseText(checkIfPersonWellAdded.getResponseBodyContent()),,,2019-04-24 16:21:20,2019-04-24 16:21:20,"0,000s",PASSED
+assert name == namePerson,,,2019-04-24 16:21:20,2019-04-24 16:21:20,"0,001s",PASSED
+assert gender == gender,,,2019-04-24 16:21:20,2019-04-24 16:21:20,"0,000s",PASSED
+assert birthDate == birthDate,,,2019-04-24 16:21:20,2019-04-24 16:21:20,"0,001s",PASSED
+"verifyResponseStatusCode(checkIfPersonWellAdded, 200, CONTINUE_ON_FAILURE)",,,2019-04-24 16:21:20,2019-04-24 16:21:20,"0,002s",PASSED
+"DeletePersonAddedLastely = sendRequest(findTestObject(""PersonsOR/DeleteOnePerson""))",,,2019-04-24 16:21:20,2019-04-24 16:21:20,"0,033s",PASSED
+"verifyResponseStatusCode(DeletePersonAddedLastely, 204)",,,2019-04-24 16:21:20,2019-04-24 16:21:20,"0,001s",PASSED
+"DeletePersonAgain = sendRequest(findTestObject(""PersonsOR/DeleteOnePerson""))",,,2019-04-24 16:21:20,2019-04-24 16:21:20,"0,031s",PASSED
+"verifyResponseStatusCode(DeletePersonAgain, 404)",,,2019-04-24 16:21:20,2019-04-24 16:21:20,"0,002s",PASSED

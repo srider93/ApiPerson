@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="AllCdT_Person" time="1" tests="1" failures="0" errors="0">
+   <testsuite name="AllCdT_Person" tests="1" failures="0" errors="0" time="1" timestamp="2019-04-24 16:35:13" hostname="radjendirane - 172.16.200.200" id="Test Suites/Person/AllCdT_Person">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/radjendirane/Katalon Studio/PersonsTestApi/Reports/Person/AllCdT_Person/20190424_163511"/>
+         <property name="logFiles" value="/Users/radjendirane/Katalon Studio/PersonsTestApi/Reports/Person/AllCdT_Person/20190424_163511/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="radjendirane - 172.16.200.200"/>
+         <property name="hostAddress" value="172.16.200.200"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="6.1.1.1"/>
+      </properties>
+      <testcase name="Test Cases/cdT_Person/cdT_InitiData" classname="Test Cases/cdT_Person/cdT_InitiData" status="PASSED">
+         <system-out><![CDATA[2019-04-24 16:35:14 - [TEST_CASE][PASSED] - Test Cases/cdT_Person/cdT_InitiData: Test Cases/cdT_Person/cdT_InitiData
+
+2019-04-24 16:35:14 - [TEST_STEP][PASSED] - Start setup action : setupTestCase: Method 'setupTestCase' complete successfully
+
+2019-04-24 16:35:14 - [TEST_STEP][PASSED] - valueExecSuiteTest = 1: null
+
+2019-04-24 16:35:15 - [MESSAGE][PASSED] - Method 'setupTestCase' complete successfully
+
+2019-04-24 16:35:15 - [TEST_STEP][PASSED] - println("test"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-04-24 16:35:13 - [TEST_SUITE][PASSED] - AllCdT_Person: Test Cases/cdT_Person/cdT_InitiData]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

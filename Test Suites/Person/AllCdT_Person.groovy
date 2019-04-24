@@ -67,26 +67,26 @@ def setUp() {
 	TestData data_init = findTestData('Data Files/DDT_Person')
 	def rows_lign = data_init.getRowNumbers()
 // for each line // TODO find a way to make it work (properly)
-//	for (i in 0..rows_lign-1) {
-//	def name = list_name.get(i)
-//	def gender = list_gender.get(i)
-//	def BDate = list_BDate.get(i)
-//	def AddSinglePerson = WS.sendRequest(findTestObject('PersonsOR/PostPerson', [('gender') : gender, ('name') : name
-//		, ('dateBD') : BDate]))
-//	WS.verifyResponseStatusCode(AddSinglePerson, 200)
-//	}
+	for (i in 1..rows_lign) {
+	def name = data_init.getValue('name', i)
+	def gender = data_init.getValue('gender', i)
+	def BDate = data_init.getValue('BirthDate', i)
+	def AddSinglePerson = WS.sendRequest(findTestObject('PersonsOR/PostPerson', [('gender') : gender, ('name') : name
+		, ('dateBD') : BDate]))
+	WS.verifyResponseStatusCode(AddSinglePerson, 200)
+	}
 	
 	// for each line // TODO find a way to use an object
-	for (i in 1..rows_lign-1) {
-		def gender = (Gender) data_init.getValue('gender', i)
-		def name = data_init.getValue('name', i)
-		def BirthDate = data_init.getValue('BirthDate', i)
-		def person1 = new Person(gender, name, BirthDate)
-		def AddSinglePerson = WS.sendRequest(findTestObject('PersonsOR/PostPerson', [('gender') : person1.gender, ('name') : person1.name
-			, ('dateBD') : person1.BirthDate]))
-		WS.verifyResponseStatusCode(AddSinglePerson, 200)
-		}
-	
+//	for (i in 1..rows_lign-1) {
+//		def gender = (Gender) data_init.getValue('gender', i)
+//		def name = data_init.getValue('name', i)
+//		def BirthDate = data_init.getValue('BirthDate', i)
+//		def person1 = new Person(gender, name, BirthDate)
+//		def AddSinglePerson = WS.sendRequest(findTestObject('PersonsOR/PostPerson', [('gender') : person1.gender, ('name') : person1.name
+//			, ('dateBD') : person1.BirthDate]))
+//		WS.verifyResponseStatusCode(AddSinglePerson, 200)
+//		}
+//	
 }
 
 /**
@@ -95,20 +95,19 @@ def setUp() {
 @TearDown(skipped = false) // Please change skipped to be false to activate this method.
 def tearDown() {
 
-	TestData data_init1 = findTestData('Data Files/DDT_Person')
-	def rows_lign = data_init1.getRowNumbers()
-	def rows_column = data_init1.getColumnNumbers()
-	def list_name1 = new ArrayList()
+	
+	
+	
+	TestData data_init = findTestData('Data Files/DDT_Person')
+	def rows_lign = data_init.getRowNumbers()
+// for each line // TODO find a way to make it work (properly)
 	for (i in 1..rows_lign) {
-		list_name1.add(data_init1.getValue('name', i))
+	def namePersonSup = data_init.getValue('name', i)
+	def deleteListperson = WS.sendRequest(findTestObject('PersonsOR/DeleteOnePerson', [('OnePerson') : namePersonSup]))
+	WS.verifyResponseStatusCode(deleteListperson, 204)
 	}
-
-	for (i in 0..rows_lign-1) {
-		def namePersonSup = list_name1.get(i)
-		def deleteListperson = WS.sendRequest(findTestObject('PersonsOR/DeleteOnePerson', [('OnePerson') : namePersonSup]))
-		WS.verifyResponseStatusCode(deleteListperson, 204)
-	}
-	}
+	
+}
 
 
 /**

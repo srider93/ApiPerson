@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="AllCdT_Person" time="3" tests="3" failures="1" errors="0">
+   <testsuite name="AllCdT_Person" tests="3" failures="1" errors="0" time="3" timestamp="2019-04-24 16:21:17" hostname="radjendirane - 172.16.200.200" id="Test Suites/Person/AllCdT_Person">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/Users/radjendirane/Katalon Studio/PersonsTestApi/Reports/Person/AllCdT_Person/20190424_162115"/>
+         <property name="logFiles" value="/Users/radjendirane/Katalon Studio/PersonsTestApi/Reports/Person/AllCdT_Person/20190424_162115/execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="radjendirane - 172.16.200.200"/>
+         <property name="hostAddress" value="172.16.200.200"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="6.1.1.1"/>
+      </properties>
+      <testcase name="Test Cases/cdT_Person/cdT_retrieveSinglePerson" classname="Test Cases/cdT_Person/cdT_retrieveSinglePerson" status="PASSED">
+         <system-out><![CDATA[2019-04-24 16:21:18 - [TEST_CASE][PASSED] - Test Cases/cdT_Person/cdT_retrieveSinglePerson: Test Cases/cdT_Person/cdT_retrieveSinglePerson
+
+2019-04-24 16:21:18 - [TEST_STEP][PASSED] - Start setup action : setupTestCase: Method 'setupTestCase' complete successfully
+
+2019-04-24 16:21:18 - [TEST_STEP][PASSED] - valueExecSuiteTest = 1: null
+
+2019-04-24 16:21:19 - [MESSAGE][PASSED] - Method 'setupTestCase' complete successfully
+
+2019-04-24 16:21:19 - [TEST_STEP][PASSED] - AddSinglePerson = sendRequest(findTestObject("PersonsOR/PostPerson", ["gender":gender, "name":namePerson, "dateBD":birthDate])): Send request successfully
+
+2019-04-24 16:21:19 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-24 16:21:19 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2019-04-24 16:21:19 - [TEST_STEP][PASSED] - result = slurper.parseText(AddSinglePerson.getResponseBodyContent()): null
+
+2019-04-24 16:21:19 - [TEST_STEP][PASSED] - assert name == namePerson: null
+
+2019-04-24 16:21:19 - [TEST_STEP][PASSED] - assert gender == gender: null
+
+2019-04-24 16:21:19 - [TEST_STEP][PASSED] - assert birthDate == birthDate: null
+
+2019-04-24 16:21:19 - [TEST_STEP][PASSED] - verifyResponseStatusCode(AddSinglePerson, 200): Verify response status code successfully
+
+2019-04-24 16:21:19 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-04-24 16:21:19 - [TEST_STEP][PASSED] - checkIfPersonExist = sendRequest(findTestObject("PersonsOR/GetOnePerson")): Send request successfully
+
+2019-04-24 16:21:19 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-24 16:21:19 - [TEST_STEP][PASSED] - slurper1 = new groovy.json.JsonSlurper(): null
+
+2019-04-24 16:21:19 - [TEST_STEP][PASSED] - result1 = slurper1.parseText(checkIfPersonExist.getResponseBodyContent()): null
+
+2019-04-24 16:21:19 - [TEST_STEP][PASSED] - assert name == namePerson: null
+
+2019-04-24 16:21:19 - [TEST_STEP][PASSED] - assert gender == gender: null
+
+2019-04-24 16:21:19 - [TEST_STEP][PASSED] - assert birthDate == birthDate: null
+
+2019-04-24 16:21:19 - [TEST_STEP][PASSED] - verifyResponseStatusCode(checkIfPersonExist, 200): Verify response status code successfully
+
+2019-04-24 16:21:19 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-04-24 16:21:19 - [TEST_STEP][PASSED] - DeletePersonAddedLastely = sendRequest(findTestObject("PersonsOR/DeleteOnePerson")): Send request successfully
+
+2019-04-24 16:21:19 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-24 16:21:19 - [TEST_STEP][PASSED] - verifyResponseStatusCode(DeletePersonAddedLastely, 204): Verify response status code successfully
+
+2019-04-24 16:21:19 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-04-24 16:21:19 - [TEST_STEP][PASSED] - checkIfPersonExistKo = sendRequest(findTestObject("PersonsOR/GetOnePerson")): Send request successfully
+
+2019-04-24 16:21:19 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-24 16:21:19 - [TEST_STEP][PASSED] - verifyResponseStatusCode(checkIfPersonExistKo, 404): Verify response status code successfully
+
+2019-04-24 16:21:19 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/cdT_Person/cdT_AddPerson" classname="Test Cases/cdT_Person/cdT_AddPerson" status="PASSED">
+         <system-out><![CDATA[2019-04-24 16:21:19 - [TEST_CASE][PASSED] - Test Cases/cdT_Person/cdT_AddPerson: Test Cases/cdT_Person/cdT_AddPerson
+
+2019-04-24 16:21:19 - [TEST_STEP][PASSED] - Start setup action : setupTestCase: Method 'setupTestCase' complete successfully
+
+2019-04-24 16:21:19 - [TEST_STEP][PASSED] - valueExecSuiteTest = 1: null
+
+2019-04-24 16:21:19 - [MESSAGE][PASSED] - Method 'setupTestCase' complete successfully
+
+2019-04-24 16:21:19 - [TEST_STEP][PASSED] - checkPersonKo = sendRequest(findTestObject("PersonsOR/GetOnePerson")): Send request successfully
+
+2019-04-24 16:21:19 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-24 16:21:19 - [TEST_STEP][PASSED] - verifyResponseStatusCode(checkPersonKo, 404): Verify response status code successfully
+
+2019-04-24 16:21:19 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-04-24 16:21:19 - [TEST_STEP][PASSED] - AddSinglePerson = sendRequest(findTestObject("PersonsOR/PostPerson", ["gender":gender, "name":namePerson, "dateBD":birthDate])): Send request successfully
+
+2019-04-24 16:21:19 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-24 16:21:19 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2019-04-24 16:21:19 - [TEST_STEP][PASSED] - result = slurper.parseText(AddSinglePerson.getResponseBodyContent()): null
+
+2019-04-24 16:21:19 - [TEST_STEP][PASSED] - assert name == namePerson: null
+
+2019-04-24 16:21:19 - [TEST_STEP][PASSED] - assert gender == gender: null
+
+2019-04-24 16:21:19 - [TEST_STEP][PASSED] - assert birthDate == birthDate: null
+
+2019-04-24 16:21:19 - [TEST_STEP][PASSED] - verifyResponseStatusCode(AddSinglePerson, 200): Verify response status code successfully
+
+2019-04-24 16:21:19 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-04-24 16:21:19 - [TEST_STEP][PASSED] - checkIfPersonWellAdded = sendRequest(findTestObject("PersonsOR/GetOnePerson")): Send request successfully
+
+2019-04-24 16:21:19 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-24 16:21:19 - [TEST_STEP][PASSED] - slurper1 = new groovy.json.JsonSlurper(): null
+
+2019-04-24 16:21:19 - [TEST_STEP][PASSED] - result1 = slurper1.parseText(checkIfPersonWellAdded.getResponseBodyContent()): null
+
+2019-04-24 16:21:19 - [TEST_STEP][PASSED] - assert name == namePerson: null
+
+2019-04-24 16:21:19 - [TEST_STEP][PASSED] - assert gender == gender: null
+
+2019-04-24 16:21:19 - [TEST_STEP][PASSED] - assert birthDate == birthDate: null
+
+2019-04-24 16:21:19 - [TEST_STEP][PASSED] - verifyResponseStatusCode(AddSinglePerson, 200): Verify response status code successfully
+
+2019-04-24 16:21:19 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-04-24 16:21:19 - [TEST_STEP][PASSED] - DeletePersonAddedLastely = sendRequest(findTestObject("PersonsOR/DeleteOnePerson")): Send request successfully
+
+2019-04-24 16:21:19 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-24 16:21:19 - [TEST_STEP][PASSED] - verifyResponseStatusCode(DeletePersonAddedLastely, 204): Verify response status code successfully
+
+2019-04-24 16:21:19 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-04-24 16:21:19 - [TEST_STEP][PASSED] - checkPersonKoAgain = sendRequest(findTestObject("PersonsOR/GetOnePerson")): Send request successfully
+
+2019-04-24 16:21:19 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-24 16:21:19 - [TEST_STEP][PASSED] - verifyResponseStatusCode(checkPersonKoAgain, 404): Verify response status code successfully
+
+2019-04-24 16:21:19 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/cdT_Person/cdT_retriveListPerson" classname="Test Cases/cdT_Person/cdT_retriveListPerson" status="FAILED">
+         <failure type="FAILED" message="Test Cases/cdT_Person/cdT_retriveListPerson FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected elements count 3 is not equal with actual count 2
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementsCountKeyword$_verifyElementsCount_closure1.doCall(VerifyElementsCountKeyword.groovy:53)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementsCountKeyword$_verifyElementsCount_closure1.call(VerifyElementsCountKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementsCountKeyword.verifyElementsCount(VerifyElementsCountKeyword.groovy:45)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementsCountKeyword.execute(VerifyElementsCountKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementsCount(WSBuiltInKeywords.groovy:94)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementsCount$2.call(Unknown Source)
+	at cdT_retriveListPerson.run(cdT_retriveListPerson:52)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1556115675200.run(TempTestSuite1556115675200.groovy:35)
+"/>
+         <system-out><![CDATA[2019-04-24 16:21:19 - [TEST_CASE][FAILED] - Test Cases/cdT_Person/cdT_retriveListPerson: Test Cases/cdT_Person/cdT_retriveListPerson FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected elements count 3 is not equal with actual count 2
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementsCountKeyword$_verifyElementsCount_closure1.doCall(VerifyElementsCountKeyword.groovy:53)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementsCountKeyword$_verifyElementsCount_closure1.call(VerifyElementsCountKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementsCountKeyword.verifyElementsCount(VerifyElementsCountKeyword.groovy:45)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementsCountKeyword.execute(VerifyElementsCountKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementsCount(WSBuiltInKeywords.groovy:94)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementsCount$2.call(Unknown Source)
+	at cdT_retriveListPerson.run(cdT_retriveListPerson:52)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1556115675200.run(TempTestSuite1556115675200.groovy:35)
+
+
+2019-04-24 16:21:19 - [TEST_STEP][PASSED] - Start setup action : setupTestCase: Method 'setupTestCase' complete successfully
+
+2019-04-24 16:21:19 - [TEST_STEP][PASSED] - valueExecSuiteTest = 1: null
+
+2019-04-24 16:21:19 - [MESSAGE][PASSED] - Method 'setupTestCase' complete successfully
+
+2019-04-24 16:21:20 - [TEST_STEP][PASSED] - data_init = findTestData("Data Files/DDT_Person"): null
+
+2019-04-24 16:21:20 - [TEST_STEP][PASSED] - rows_lign = data_init.getRowNumbers(): null
+
+2019-04-24 16:21:20 - [TEST_STEP][PASSED] - AddSinglePerson = sendRequest(findTestObject("PersonsOR/PostPerson", ["gender":gender, "name":namePerson, "dateBD":birthDate])): Send request successfully
+
+2019-04-24 16:21:20 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-24 16:21:20 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2019-04-24 16:21:20 - [TEST_STEP][PASSED] - result = slurper.parseText(AddSinglePerson.getResponseBodyContent()): null
+
+2019-04-24 16:21:20 - [TEST_STEP][PASSED] - assert name == namePerson: null
+
+2019-04-24 16:21:20 - [TEST_STEP][PASSED] - assert gender == gender: null
+
+2019-04-24 16:21:20 - [TEST_STEP][PASSED] - assert birthDate == birthDate: null
+
+2019-04-24 16:21:20 - [TEST_STEP][PASSED] - verifyResponseStatusCode(AddSinglePerson, 200): Verify response status code successfully
+
+2019-04-24 16:21:20 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-04-24 16:21:20 - [TEST_STEP][PASSED] - checkListPerson = sendRequest(findTestObject("PersonsOR/GetAll")): Send request successfully
+
+2019-04-24 16:21:20 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-24 16:21:20 - [TEST_STEP][PASSED] - verifyResponseStatusCode(checkListPerson, 200, STOP_ON_FAILURE): Verify response status code successfully
+
+2019-04-24 16:21:20 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-04-24 16:21:20 - [TEST_STEP][FAILED] - if (valueExecSuiteTest == 1): if (valueExecSuiteTest == 1) FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected elements count 3 is not equal with actual count 2
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementsCountKeyword$_verifyElementsCount_closure1.doCall(VerifyElementsCountKeyword.groovy:53)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementsCountKeyword$_verifyElementsCount_closure1.call(VerifyElementsCountKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementsCountKeyword.verifyElementsCount(VerifyElementsCountKeyword.groovy:45)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementsCountKeyword.execute(VerifyElementsCountKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementsCount(WSBuiltInKeywords.groovy:94)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementsCount$2.call(Unknown Source)
+	at cdT_retriveListPerson.run(cdT_retriveListPerson:52)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1556115675200.run(TempTestSuite1556115675200.groovy:35)
+
+
+2019-04-24 16:21:20 - [TEST_STEP][PASSED] - println(rows_lign.toString()): null
+
+2019-04-24 16:21:20 - [TEST_STEP][FAILED] - verifyElementsCount(checkListPerson, "name", rows_lign + 1): if (valueExecSuiteTest == 1) FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected elements count 3 is not equal with actual count 2
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementsCountKeyword$_verifyElementsCount_closure1.doCall(VerifyElementsCountKeyword.groovy:53)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementsCountKeyword$_verifyElementsCount_closure1.call(VerifyElementsCountKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementsCountKeyword.verifyElementsCount(VerifyElementsCountKeyword.groovy:45)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementsCountKeyword.execute(VerifyElementsCountKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementsCount(WSBuiltInKeywords.groovy:94)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementsCount$2.call(Unknown Source)
+	at cdT_retriveListPerson.run(cdT_retriveListPerson:52)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1556115675200.run(TempTestSuite1556115675200.groovy:35)
+
+
+2019-04-24 16:21:20 - [MESSAGE][FAILED] - Expected elements count 3 is not equal with actual count 2
+
+2019-04-24 16:21:20 - [MESSAGE][FAILED] - Unable to verify element count (Root cause: com.kms.katalon.core.exception.StepFailedException: Expected elements count 3 is not equal with actual count 2
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementsCountKeyword$_verifyElementsCount_closure1.doCall(VerifyElementsCountKeyword.groovy:53)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementsCountKeyword$_verifyElementsCount_closure1.call(VerifyElementsCountKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementsCountKeyword.verifyElementsCount(VerifyElementsCountKeyword.groovy:45)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementsCountKeyword.execute(VerifyElementsCountKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementsCount(WSBuiltInKeywords.groovy:94)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementsCount$2.call(Unknown Source)
+	at cdT_retriveListPerson.run(cdT_retriveListPerson:52)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1556115675200.run(TempTestSuite1556115675200.groovy:35)
+)
+
+2019-04-24 16:21:20 - [MESSAGE][FAILED] - if (valueExecSuiteTest == 1) FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected elements count 3 is not equal with actual count 2
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementsCountKeyword$_verifyElementsCount_closure1.doCall(VerifyElementsCountKeyword.groovy:53)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementsCountKeyword$_verifyElementsCount_closure1.call(VerifyElementsCountKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementsCountKeyword.verifyElementsCount(VerifyElementsCountKeyword.groovy:45)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementsCountKeyword.execute(VerifyElementsCountKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementsCount(WSBuiltInKeywords.groovy:94)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementsCount$2.call(Unknown Source)
+	at cdT_retriveListPerson.run(cdT_retriveListPerson:52)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1556115675200.run(TempTestSuite1556115675200.groovy:35)]]></system-out>
+         <system-err><![CDATA[2019-04-24 16:21:19 - [TEST_CASE][FAILED] - Test Cases/cdT_Person/cdT_retriveListPerson: Test Cases/cdT_Person/cdT_retriveListPerson FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected elements count 3 is not equal with actual count 2
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementsCountKeyword$_verifyElementsCount_closure1.doCall(VerifyElementsCountKeyword.groovy:53)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementsCountKeyword$_verifyElementsCount_closure1.call(VerifyElementsCountKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementsCountKeyword.verifyElementsCount(VerifyElementsCountKeyword.groovy:45)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementsCountKeyword.execute(VerifyElementsCountKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementsCount(WSBuiltInKeywords.groovy:94)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementsCount$2.call(Unknown Source)
+	at cdT_retriveListPerson.run(cdT_retriveListPerson:52)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1556115675200.run(TempTestSuite1556115675200.groovy:35)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/cdT_Person/cdT_DeletePerson" classname="Test Cases/cdT_Person/cdT_DeletePerson" status="PASSED">
+         <system-out><![CDATA[2019-04-24 16:21:20 - [TEST_CASE][PASSED] - Test Cases/cdT_Person/cdT_DeletePerson: Test Cases/cdT_Person/cdT_DeletePerson
+
+2019-04-24 16:21:20 - [TEST_STEP][PASSED] - Start setup action : setupTestCase: Method 'setupTestCase' complete successfully
+
+2019-04-24 16:21:20 - [TEST_STEP][PASSED] - valueExecSuiteTest = 1: null
+
+2019-04-24 16:21:20 - [MESSAGE][PASSED] - Method 'setupTestCase' complete successfully
+
+2019-04-24 16:21:20 - [TEST_STEP][PASSED] - AddSinglePerson = sendRequest(findTestObject("PersonsOR/PostPerson", ["gender":gender, "name":namePerson, "dateBD":birthDate])): Send request successfully
+
+2019-04-24 16:21:20 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-24 16:21:20 - [TEST_STEP][PASSED] - slurper = new groovy.json.JsonSlurper(): null
+
+2019-04-24 16:21:20 - [TEST_STEP][PASSED] - result = slurper.parseText(AddSinglePerson.getResponseBodyContent()): null
+
+2019-04-24 16:21:20 - [TEST_STEP][PASSED] - assert name == namePerson: null
+
+2019-04-24 16:21:20 - [TEST_STEP][PASSED] - assert gender == gender: null
+
+2019-04-24 16:21:20 - [TEST_STEP][PASSED] - assert birthDate == birthDate: null
+
+2019-04-24 16:21:20 - [TEST_STEP][PASSED] - verifyResponseStatusCode(AddSinglePerson, 200): Verify response status code successfully
+
+2019-04-24 16:21:20 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-04-24 16:21:20 - [TEST_STEP][PASSED] - checkIfPersonWellAdded = sendRequest(findTestObject("PersonsOR/GetOnePerson")): Send request successfully
+
+2019-04-24 16:21:20 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-24 16:21:20 - [TEST_STEP][PASSED] - slurper1 = new groovy.json.JsonSlurper(): null
+
+2019-04-24 16:21:20 - [TEST_STEP][PASSED] - result1 = slurper1.parseText(checkIfPersonWellAdded.getResponseBodyContent()): null
+
+2019-04-24 16:21:20 - [TEST_STEP][PASSED] - assert name == namePerson: null
+
+2019-04-24 16:21:20 - [TEST_STEP][PASSED] - assert gender == gender: null
+
+2019-04-24 16:21:20 - [TEST_STEP][PASSED] - assert birthDate == birthDate: null
+
+2019-04-24 16:21:20 - [TEST_STEP][PASSED] - verifyResponseStatusCode(checkIfPersonWellAdded, 200, CONTINUE_ON_FAILURE): Verify response status code successfully
+
+2019-04-24 16:21:20 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-04-24 16:21:20 - [TEST_STEP][PASSED] - DeletePersonAddedLastely = sendRequest(findTestObject("PersonsOR/DeleteOnePerson")): Send request successfully
+
+2019-04-24 16:21:20 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-24 16:21:20 - [TEST_STEP][PASSED] - verifyResponseStatusCode(DeletePersonAddedLastely, 204): Verify response status code successfully
+
+2019-04-24 16:21:20 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2019-04-24 16:21:20 - [TEST_STEP][PASSED] - DeletePersonAgain = sendRequest(findTestObject("PersonsOR/DeleteOnePerson")): Send request successfully
+
+2019-04-24 16:21:20 - [MESSAGE][PASSED] - Send request successfully
+
+2019-04-24 16:21:20 - [TEST_STEP][PASSED] - verifyResponseStatusCode(DeletePersonAgain, 404): Verify response status code successfully
+
+2019-04-24 16:21:20 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-04-24 16:21:17 - [TEST_SUITE][FAILED] - AllCdT_Person: Test Cases/cdT_Person/cdT_retriveListPerson FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected elements count 3 is not equal with actual count 2
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementsCountKeyword$_verifyElementsCount_closure1.doCall(VerifyElementsCountKeyword.groovy:53)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementsCountKeyword$_verifyElementsCount_closure1.call(VerifyElementsCountKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementsCountKeyword.verifyElementsCount(VerifyElementsCountKeyword.groovy:45)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementsCountKeyword.execute(VerifyElementsCountKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementsCount(WSBuiltInKeywords.groovy:94)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementsCount$2.call(Unknown Source)
+	at cdT_retriveListPerson.run(cdT_retriveListPerson:52)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1556115675200.run(TempTestSuite1556115675200.groovy:35)]]></system-out>
+      <system-err><![CDATA[2019-04-24 16:21:17 - [TEST_SUITE][FAILED] - AllCdT_Person: Test Cases/cdT_Person/cdT_retriveListPerson FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Expected elements count 3 is not equal with actual count 2
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementsCountKeyword$_verifyElementsCount_closure1.doCall(VerifyElementsCountKeyword.groovy:53)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementsCountKeyword$_verifyElementsCount_closure1.call(VerifyElementsCountKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:66)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementsCountKeyword.verifyElementsCount(VerifyElementsCountKeyword.groovy:45)
+	at com.kms.katalon.core.webservice.keyword.builtin.VerifyElementsCountKeyword.execute(VerifyElementsCountKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.verifyElementsCount(WSBuiltInKeywords.groovy:94)
+	at com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords$verifyElementsCount$2.call(Unknown Source)
+	at cdT_retriveListPerson.run(cdT_retriveListPerson:52)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:342)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:333)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:312)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:304)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:238)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1556115675200.run(TempTestSuite1556115675200.groovy:35)]]></system-err>
+   </testsuite>
+</testsuites>

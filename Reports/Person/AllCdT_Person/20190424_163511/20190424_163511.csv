@@ -1,0 +1,6 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+AllCdT_Person,,,2019-04-24 16:35:13,2019-04-24 16:35:15,"1,509s",PASSED
+,,,,,,
+Test Cases/cdT_Person/cdT_InitiData,,,2019-04-24 16:35:14,2019-04-24 16:35:15,"0,348s",PASSED
+Start setup action : setupTestCase,,,2019-04-24 16:35:14,2019-04-24 16:35:15,"0,149s",PASSED
+"println(""test"")",,,2019-04-24 16:35:15,2019-04-24 16:35:15,"0,005s",PASSED
