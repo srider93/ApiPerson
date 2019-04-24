@@ -37,7 +37,7 @@ def result = slurper.parseText(AddSinglePerson.getResponseBodyContent())
 assert result.name == GlobalVariable.namePerson
 assert result.gender == GlobalVariable.gender
 assert result.birthDate == GlobalVariable.birthDate
-WS.verifyResponseStatusCode(AddSinglePerson, 204)//expected 200
+WS.verifyResponseStatusCode(AddSinglePerson, 200)//expected 200
 
 //Verifie si la personne a bien été ajoutée dans la liste de personne et retourne bien le code 200
 def checkIfPersonWellAdded = WS.sendRequest(findTestObject('PersonsOR/GetOnePerson'))
@@ -46,7 +46,7 @@ def result1 = slurper1.parseText(checkIfPersonWellAdded.getResponseBodyContent()
 assert result.name == GlobalVariable.namePerson
 assert result.gender == GlobalVariable.gender
 assert result.birthDate == GlobalVariable.birthDate
-WS.verifyResponseStatusCode(checkIfPersonWellAdded, 204)//expected 200
+WS.verifyResponseStatusCode(checkIfPersonWellAdded, 200)//expected 200
 
 //Supprime la donnée rentrée précédemment et verifie qu'il retourne bien le code 204
 def DeletePersonAddedLastely = WS.sendRequest(findTestObject('PersonsOR/DeleteOnePerson'))
